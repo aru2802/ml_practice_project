@@ -24,38 +24,37 @@ This helps identify factors that most influence student success and can be used 
 
 ## 🗂️ Project Structure  
 
+```bash
 ml_practice_project/
 │
 ├── .vscode/
-│ └── settings.json # VS Code workspace settings
+│   └── settings.json            # VS Code workspace settings
 │
 ├── data/
-│ └── stud.csv # Student performance dataset
+│   └── stud.csv                 # Student performance dataset
 │
-├── notebook/ # Jupyter notebooks for exploration & experiments
-│ ├── 1. EDA STUDENT PERFORMANCE.ipynb
-│ └── 2. MODEL TRAINING.ipynb
+├── notebook/                    # Jupyter notebooks for exploration & experiments
+│   ├── 1. EDA STUDENT PERFORMANCE.ipynb
+│   └── 2. MODEL TRAINING.ipynb
 │
 ├── src/
-│ ├── components/ # Data ingestion, transformation, model training modules
-│ ├── pipeline/ # Training & prediction pipeline scripts
-│ ├── exception.py # Custom exception handling
-│ ├── logger.py # Logging configuration
-│ ├── utils.py # Helper functions
-│ └── init.py
+│   ├── components/              # Data ingestion, transformation, model training modules
+│   ├── pipeline/                # Training & prediction pipeline scripts
+│   ├── exception.py             # Custom exception handling
+│   ├── logger.py                # Logging configuration
+│   ├── utils.py                 # Helper functions
+│   └── __init__.py
 │
-├── templates/ # HTML templates for the Flask web app
-│ ├── home.html
-│ └── index.html
+├── templates/                   # HTML templates for Flask app
+│   ├── home.html
+│   └── index.html
 │
-├── app.py # Flask application for web deployment
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation (you are here)
-├── .gitignore # Git ignore file
-└── catboost_info/ # CatBoost training logs (auto-generated)
-
-
----
+├── catboost_info/               # CatBoost logs folder
+│
+├── app.py                       # Flask application
+├── requirements.txt              # Python dependencies
+├── README.md                    # Project documentation
+└── .gitignore                   # Git ignore file
 
 ## 🧠 Dataset Description  
 
